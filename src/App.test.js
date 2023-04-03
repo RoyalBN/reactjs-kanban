@@ -13,4 +13,10 @@ describe("App", () => {
     const textInput = screen.getByPlaceholderText(/New task name/i);
     expect(textInput).toBeInTheDocument();
   });
+
+  test("should render a button to add a new task", () => {
+    render(<App />);
+    const button = screen.getByRole("button", { name: /Create task/i });
+    expect(button).toBeInTheDocument();
+  });
 });

@@ -7,6 +7,7 @@ function App() {
       <div className="container">
         <div className="add-task">
           <input type="text" placeholder="New task name" />
+          <button>Create task</button>
         </div>
         <div className="content"></div>
       </div>
